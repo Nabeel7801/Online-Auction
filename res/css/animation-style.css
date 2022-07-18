@@ -1,0 +1,392 @@
+#title {
+    text-align: center;
+}
+
+#focusTriangles {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+#triangle-topleft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid rgba(255, 255, 255, 0.3);
+    border-right: 10px solid transparent;
+}
+
+#triangle-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid rgba(255, 255, 255, 0.3);
+    border-left: 10px solid transparent;
+}
+
+#triangle-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid rgba(255, 255, 255, 0.3);
+    border-right: 10px solid transparent;
+}
+
+#triangle-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid rgba(255, 255, 255, 0.3);
+    border-left: 10px solid transparent;
+}
+
+#BiddingAnimationArea {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    color: white;
+    font-family: Aldrich;
+    font-weight: bold;
+}
+
+#BiddingBox1 {
+    position: absolute;
+    height: 0;
+    width: 70%;
+    top: 0;
+    left: 15%;
+    text-align: center;
+    border-bottom: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    line-height: 40px;
+    opacity: 0.4;
+}
+
+#BiddingBox2 {
+    position: absolute;
+    height: 0;
+    width: 85%;
+    top: 15%;
+    left: 7.5%;
+    text-align: center;
+    border-bottom: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    line-height: 40px;
+    opacity: 0.6;
+}
+
+#BiddingBox3 {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    text-align: center;
+    border-bottom: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    line-height: 40px;
+    opacity: 0.8;
+}
+
+#BiddingBox4 {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 43.75%;
+    left: 0;
+    border-top: 50px solid #0F1620;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    text-align: left;
+    line-height: 50px;
+    opacity: 1;
+}
+
+#BiddingBox4 span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -50px;
+    font-size: 17px;
+}
+
+#BiddingBox5 {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    top: 60%;
+    left: 0;
+    border-top: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    text-align: left;
+    line-height: 40px;
+    opacity: 0.8;
+}
+
+#BiddingBox5 span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -40px;
+    font-size: 15px;
+}
+
+#BiddingBox6 {
+    position: absolute;
+    height: 0px;
+    width: 85%;
+    top: 75%;
+    left: 7.5%;
+    border-top: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    text-align: left;
+    line-height: 40px;
+    opacity: 0.6;
+}
+
+#BiddingBox6 span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -40px;
+    font-size: 14px;
+}
+
+#BiddingBox7 {
+    position: absolute;
+    height: 0;
+    width: 70%;
+    top: 90%;
+    left: 15%;
+    border-top: 40px solid #0F1620;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    text-align: left;
+    line-height: 40px;
+    opacity: 0.4;
+}
+
+#BiddingBox7 span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -40px;
+    font-size: 12px;
+}
+
+.BoxAnimation1 {
+    animation: anim1 0.5s;
+}
+
+.BoxAnimation2 {
+    animation: anim2 0.5s;
+}
+
+.BoxAnimation3 {
+    animation: anim3 0.5s;
+}
+
+.BoxAnimation4 {
+    animation: anim4 0.5s;
+}
+
+.BoxAnimation5 {
+    animation: anim5 0.5s;
+}
+
+.BoxAnimation6 {
+    animation: anim6 0.5s;
+}
+
+.BoxAnimation7 {
+    animation: anim7 0.5s;
+}
+
+@keyframes anim1 {
+    0% {
+        left: 15%;
+        top: 0;
+        width: 70%;
+        line-height: 24px;
+        opacity: 0.4
+    }
+    100% {
+        left: 7.5%;
+        top: 15%;
+        width: 85%;
+        line-height: 26px;
+        opacity: 0.6
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        left: 7.5%;
+        top: 15%;
+        width: 85%;
+        line-height: 26px;
+        opacity: 0.6
+    }
+    100% {
+        left: 0;
+        top: 30%;
+        width: 100%;
+        line-height: 28px;
+        opacity: 0.8
+    }
+}
+
+@keyframes anim3 {
+    0% {
+        top: 30%;
+        border-bottom: 40px solid #0F1620;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        line-height: 40px;
+        opacity: 0.8;
+    }
+    100% {
+        top: 43.75%;
+        border-bottom: 50px solid #0F1620;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        line-height: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes anim4 {
+    0% {
+        top: 43.75%;
+        border-top: 50px solid #0F1620;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        line-height: 50px;
+        opacity: 1
+    }
+    100% {
+        top: 60%;
+        border-top: 40px solid #0F1620;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        line-height: 40px;
+        opacity: 0.8
+    }
+}
+
+@keyframes anim5 {
+    0% {
+        left: 0;
+        top: 60%;
+        width: 100%;
+        line-height: 28px;
+        opacity: 0.8
+    }
+    100% {
+        left: 7.5%;
+        top: 75%;
+        width: 85%;
+        line-height: 26px;
+        opacity: 0.6
+    }
+}
+
+@keyframes anim6 {
+    0% {
+        left: 7.5%;
+        top: 75%;
+        width: 85%;
+        line-height: 26px;
+        opacity: 0.6
+    }
+    100% {
+        left: 15%;
+        top: 90%;
+        width: 70%;
+        line-height: 24px;
+        opacity: 0.4
+    }
+}
+
+@keyframes anim7 {
+    0% {
+        top: 90%;
+        border-top: 40px solid #0F1620;
+        border-bottom: 0px solid #0F1620;
+    }
+    100% {
+        top: 0%;
+        border-top: 0px solid #0F1620;
+        border-bottom: 40px solid #0F1620;
+    }
+}
+
+.SpanAnimation1 {
+    animation: SpanAnim1 0.5s;
+}
+
+.SpanAnimation2 {
+    animation: SpanAnim2 0.5s;
+}
+
+.SpanAnimation3 {
+    animation: SpanAnim3 0.5s;
+}
+
+@keyframes SpanAnim1 {
+    0% {
+        top: -50px;
+        font-size: 17px
+    }
+    100% {
+        top: -40px;
+        font-size: 15px
+    }
+}
+
+@keyframes SpanAnim2 {
+    0% {
+        top: -40px;
+        font-size: 15px
+    }
+    100% {
+        top: -40px;
+        font-size: 14px
+    }
+}
+
+@keyframes SpanAnim3 {
+    0% {
+        top: -40px;
+        font-size: 14px
+    }
+    100% {
+        top: -40px;
+        font-size: 12px
+    }
+}
+
+@media (max-width: 479px) {
+    
+    #BiddingAnimationArea {
+        height: 350px;
+        width: 350px;
+    }
+
+}

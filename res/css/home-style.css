@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    outline: 0;
+}
+
+#container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #cecaca;
+}
+
+#container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #cecaca;
+}
+
+#container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+body {
+    height: 100%;
+    background-image: url('../images/background/background4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#mainBody {
+    height: 98%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    width: 90%;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tabsHeading {
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Montserrat-Bold, sans-serif;
+    color: #d6d7d8;
+}
+
+#startNow {
+    position: relative;
+    margin-top: 80px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    color: #bfc0c1;
+    font-family: Montserrat-Bold, sans-serif;
+    width: 40%;
+}
+
+#StartNowData {
+    display: block;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#startItems {
+    align-self: center;
+}
+
+#startButton {
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 150px;
+}
+
+#startInput {
+    color: #bfc0c1;
+    font-size: 18px;
+    padding: 10px 20px;
+    padding-right: 40px;
+    border: 4px #bfc0c1 solid;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#chevronRight {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    font-size: 25px;
+    color: #d3d3d3;
+    margin-left: 5px;
+}
+
+#contactus {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 0;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contactus_section {
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #000;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+.form_section {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.contact_form {
+    margin: 0 2.5%;
+}
+
+.contact_form div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact_form div input,
+.contact_form div textarea {
+    padding: 24px 20px 0;
+    border-color: #333;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #97a0af;
+    box-shadow: none;
+}
+
+.contact_form div .error {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.contact_form div input {
+    margin-bottom: 15px;
+    padding: 24px 27px;
+}
+
+.contact_form div textarea {
+    margin-bottom: 28px;
+    min-height: 172px;
+    resize: none;
+}
+
+.contact_form div button {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    padding: 17px 43px;
+    background: maroon;
+    border-radius: 40px;
+    font-weight: 600;
+    border-color: transparent;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+.contact_form div button:hover {
+    background: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_form div button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.section_title {
+    color: #129CF3;
+    font-size: 48px;
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 767px) {
+    .shopnow p {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+    .custom_btn {
+        border: 3px solid white;
+        font-size: 18px;
+        color: white;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    .contactus_section,
+    .form_section {
+        width: 90%;
+    }
+}
+
+@media (max-width: 479px) {
+    
+    #startNow {
+        width: 100%;
+        justify-content: start;
+        margin-left: 20px;
+    }
+    
+    .tabsHeading {
+        font-size: 24px;
+    line-height: 24px;
+    }
+    
+    #StartNowData {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    
+    #startButton {
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+    
+    .shopnow p {
+        font-size: 22px;
+    }
+    .product_section {
+        padding: 0;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .product_card {
+        width: 270px;
+        height: 360px;
+    }
+    .imageHolder {
+        width: 270px;
+        height: 250px;
+    }
+    .imageHolder img {
+        max-width: 210px;
+        max-height: 230px;
+    }
+    .product_section .title h2 {
+        font-size: 22px;
+    }
+    #products {
+        width: 100%;
+    }
+    .product_card {
+        margin: 10px;
+    }
+    .contact_form div {
+        width: 100%;
+    }
+    .contact_form div button {
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: 0;
+    }
+    .contactus_section,
+    .form_section {
+        width: 95%;
+    }
+}

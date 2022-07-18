@@ -1,0 +1,307 @@
+.product_page {
+    background: #fff;
+    width: 100%;
+    padding: 22px;
+    position: relative;
+    margin-right: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image_area {
+    flex-basis: 45%;
+    width: 45%;
+}
+
+.product_main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    box-shadow: 0 1px 2px 2px #ccc;
+    padding: 10px;
+}
+
+.product_main_image img {
+    max-height: 380px;
+    max-width: 90%;
+}
+
+#product_name {
+    display: none;
+}
+
+.product_other_images {
+    width: 90%;
+    overflow-x: hidden;
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.other_images_area {
+    width: 100%;
+    display: flex;
+}
+
+.otherImagesOuter {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 4px;
+    margin: 0 5px;
+}
+
+.otherImageContainer {
+    display: table-cell;
+}
+
+.otherImages {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 80px;
+    padding: 5px 2px;
+    margin: 2px;
+}
+
+.otherImages img {
+    max-width: 100px;
+    max-height: 70px;
+}
+
+.scroll_left,
+.scroll_right {
+    width: 20px;
+    height: 100%;
+    line-height: 80px;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.otherActive {
+    box-shadow: 0 1px 2px 2px #c7ced5;
+}
+
+#detailAreaOuter {
+    flex-basis: 50%;
+    margin: 20px auto;
+}
+
+#detailAreaInner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.product_page h2 {
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 12px;
+    color: #333333;
+    font-weight: bold;
+    font-family: Montserrat-Bold, sans-serif;
+}
+
+#productInfo {
+    flex-basis: 45%;
+    margin-top: 20px;
+    font-family: sans-serif, 'Open Sans', 'Helvetica Neue';
+}
+
+.innerHeading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3D5791;
+    font-family: Montserrat-Bold, sans-serif;
+}
+
+.dataRow {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.title {
+    color: gray;
+    font-family: Montserrat-Medium, sans-serif;
+}
+
+.data {
+    float: right;
+    font-weight: bold;
+    color: #333333;
+    font-family: Montserrat-SemiBold, sans-serif;
+}
+
+#bidInfo {
+    position: relative;
+    flex-basis: 45%;
+    padding: 20px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+
+#status {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px 10px;
+    color: green;
+    background-color: white;
+    font-size: 14px;
+    font-family: Montserrat-Bold, sans-serif;
+}
+
+#priceArea {
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#bidInfo p {
+    font-size: 14px;
+    margin: 0;
+    font-family: Montserrat-Medium, sans-serif;
+}
+
+#basePrice {
+    color: #93C327;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    font-family: Montserrat-SemiBold, sans-serif;
+}
+
+#TimeArea {
+    padding: 10px;
+}
+
+#auctionDate {
+    color: #93C327;
+    margin: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Montserrat-SemiBold, sans-serif;
+}
+
+#duration {
+    color: #93C327;
+    margin: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Montserrat-SemiBold, sans-serif;
+}
+
+#bidNow {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #12CCF8;
+    cursor: pointer;
+    font-family: Montserrat-SemiBold, sans-serif;
+}
+
+#bidNow>i {
+    margin-right: 5px;
+}
+
+#bidNow:hover {
+    background-color: #3D5791;
+}
+
+@media (max-width: 479px) {
+    .product_page {
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .image_area {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    .product_main_image {
+        height: 280px;
+    }
+    
+    .product_main_image img{
+        height: 220px;
+    }
+    
+    .otherImagesOuter {
+        overflow-x: auto;
+    }
+    
+    .scroll_other_img {
+        display: none;
+    }
+    
+    .otherImages {
+        width: 80px;
+        height: 64px;
+    }
+    
+    .otherImages img {
+        max-width: 80px;
+        max-height: 58px;
+    }
+    
+    #detailAreaOuter {
+        flex-basis: 100%;
+        width: 100%;
+        margin: 20px 10px;
+    }
+    
+    #detailAreaInner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #productInfo {
+        flex-basis: 100%;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-family: sans-serif, 'Open Sans', 'Helvetica Neue';
+    }
+        
+    #bidInfo {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    #productHeading {
+        font-size: 24px;
+    }
+        
+    .dataRow {
+        padding: 5px 10px;
+        font-size: 16px;
+    } 
+    
+    .dataRow > .title {
+        font-size: 16px;
+    }
+    
+    .innerHeading {
+        font-size: 18px;
+    }
+    
+    #basePrice {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+}

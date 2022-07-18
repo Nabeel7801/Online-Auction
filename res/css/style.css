@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background/background4.jpg');
+    background-size: cover;
+}
+
+#mainPage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.movingBackground {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+    display: flex;
+    -ms-transform: translate(70%, 0);
+    transform: translate(70%, 0);
+} 
+
+.movingBgLeft {
+    flex-basis: 20%;
+    right: 1px;
+    background: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%);
+}
+
+.movingBgCenter {
+    flex-basis: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movingBgCenter button {
+    background-color: #60c7c1;
+}
+
+.movingBackground p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #333333;
+}
+
+#signinText {
+    display: none;
+}
+
+.movingBgRight {
+    flex-basis: 20%;
+    background: linear-gradient(105deg, white 0%, white 50%, transparent 50%);
+}
+
+.mainLoginPage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+#registerForm .formContent {
+    display: none
+}
+
+div {
+    outline: none;
+    border: 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #636363;
+}
+
+.formContent {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.formHeader {
+    min-height: 16px;
+    padding: 15px;
+    border-bottom: none;
+    position: relative;
+    justify-content: center;
+}
+
+.avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 2;
+    background: #60c7c1;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+    margin: 0;
+    line-height: 1.428571429;
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+}
+
+.formBody {
+    position: relative;
+    padding: 20px
+}
+
+.formError {
+    display: none;
+    color: red;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.form-control:focus {
+    border-color: #70c5c0;
+}
+
+.form-control,
+.form .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.formFooter {
+    padding: 19px 20px 20px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #999;
+    cursor: pointer;
+}
+
+#openRegister {
+    display: none;
+}
+
+#openSignin {
+    display: none;
+}
+
+.form .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+
+.form .btn:hover,
+.form .btn:focus {
+    background: #45aba6;
+    outline: none;
+}
+
+#timeSpace {
+    z-index: 1000;
+    position: fixed;
+    right: 0.5%;
+    top: 60px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333333;
+    font-weight: bold
+}
+
+#myModal {
+    height: 100%;
+    display: none;
+}
+
+.modal-CP {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #636363;
+    background: rgba(100, 100, 100, 0.95);
+}
+
+.modal-CP .modal-content {
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-CP .modal-header {
+    border-bottom: none;
+    position: relative;
+    justify-content: center;
+}
+
+.modal-CP h4 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.modal-CP .form-control:focus {
+    border-color: #70c5c0;
+}
+
+.modal-CP .form-control,
+.modal-CP .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-CP .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.modal-CP .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.modal-CP .modal-footer a {
+    color: #999;
+}
+
+.modal-CP .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+
+.modal-CP .btn:hover,
+.modal-CP .btn:focus {
+    background: #45aba6;
+    outline: none;
+}
+
+#forgotResend {
+    outline: none;
+    background-color: transparent;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+}
+
+#forgotResend:hover {
+    background-color: gray;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: Montserrat-SemiBold, sans-serif;
+    border-top: 2px solid white;
+    color: white;
+}
+
+#copyRightLine2 {
+    position: relative;
+    float: right;
+    padding-right: 20px;
+    font-family: Montserrat-Medium, sans-serif;
+}
+
+
+
+@media (max-width: 479px) {
+    .movingBackground {
+        display: none;
+    }
+    #openRegister {
+        display: block;
+    }
+    #openSignin {
+        display: block;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
